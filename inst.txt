@@ -1,0 +1,9 @@
+To access the keyboard
+>>export QT_XKB_CONFIG_ROOT=/usr/share/X11/xkb
+
+To Run the video to capture segem
+>>python text_detection_video_1.py  --east frozen_east_text_detection.pb --padding 0.05
+
+To run the OCR on segemented images
+>>python text_recognition.py --east frozen_east_text_detection.pb \ --image Segmented_Imaged/0.jpg
+
